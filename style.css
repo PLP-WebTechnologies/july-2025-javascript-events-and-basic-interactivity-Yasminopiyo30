@@ -1,0 +1,195 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+  color: #444;
+}
+
+.dark-mode header h1 {
+  color: #bbd;
+}
+
+#theme-toggle {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #0056b3;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dark-mode .feature {
+  background: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Counter Game */
+#click-btn, #start-game {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#start-game {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#click-btn {
+  background-color: #ffc107;
+  border: none;
+  border-radius: 5px;
+}
+
+/* FAQ Section */
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  background: #e9ecef;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.dark-mode .faq-question {
+  background: #444;
+  color: white;
+}
+
+.faq-answer {
+  padding: 15px;
+  background: #f1f1f1;
+  display: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.dark-mode .faq-answer {
+  background: #4a4a4a;
+  color: #ddd;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.tab-btn {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.dark-mode .tab-btn {
+  background: #444;
+  color: white;
+  border-color: #555;
+}
+
+.tab-btn.active {
+  background: #007bff;
+  color: white;
+}
+
+.tab-content {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.dark-mode .tab-content {
+  background: #3a3a3a;
+  border-color: #555;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+}
+
+#form-message {
+  margin-top: 15px;
+  font-weight: bold;
+}

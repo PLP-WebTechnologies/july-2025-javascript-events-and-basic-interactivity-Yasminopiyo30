@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive JavaScript Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1> Interactive Web Page</h1>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 2: Interactive Elements -->
+
+    <!-- Counter Game -->
+    <section class="feature">
+      <h2> Click Counter Game</h2>
+      <p>Click the button as many times as you can in 10 seconds!</p>
+      <button id="start-game">Start Game</button>
+      <button id="click-btn" disabled>Click Me!</button>
+      <p>Score: <span id="score">0</span></p>
+      <p>Time Left: <span id="timer">10</span>s</p>
+    </section>
+
+    <!-- Collapsible FAQ -->
+    <section class="feature">
+      <h2> Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">
+          <p>JavaScript is a programming language used to make web pages interactive.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Why use event listeners?</button>
+        <div class="faq-answer">
+          <p>They allow your page to respond to user actions like clicks and keypresses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabbed Interface -->
+    <section class="feature">
+      <h2> Tabbed Content</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="tab1">Tab 1: Info</button>
+        <button class="tab-btn" data-tab="tab2">Tab 2: Settings</button>
+        <button class="tab-btn" data-tab="tab3">Tab 3: Help</button>
+      </div>
+      <div class="tab-content">
+        <div id="tab1" class="tab-pane active">
+          <p>Welcome! This is general information.</p>
+        </div>
+        <div id="tab2" class="tab-pane">
+          <p>Adjust your preferences here.</p>
+        </div>
+        <div id="tab3" class="tab-pane">
+          <p>Need help? Check our documentation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section class="feature">
+      <h2> Sign Up Form</h2>
+      <form id="signup-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" />
+        <div class="error" id="name-error"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <div class="error" id="email-error"></div>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <div class="error" id="password-error"></div>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" />
+        <div class="error" id="confirm-error"></div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <div id="form-message"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
